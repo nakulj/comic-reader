@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "ComicReader",
+  "version": "0.1",
+
+  "description": "Reveals hovertext on comics for easy reading.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.smbc-comics.com/*"],
+      "js": ["smbc.js"]
+    }
+  ]
+
+}
+
